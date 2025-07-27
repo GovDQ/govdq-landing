@@ -9,14 +9,18 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #F5F3EF;
-      color: #2F3E46;
+      background-color: #1f1a17;
+      color: #f3f1ed;
     }
     header {
-      background-color: #6D9886;
+      background-color: #5d8374;
       color: white;
       padding: 3rem 1rem;
       text-align: center;
+    }
+    .logo {
+      height: 60px;
+      margin-bottom: 1rem;
     }
     .btn-earth {
       background-color: #A27B5C;
@@ -33,16 +37,25 @@
     }
     a {
       text-decoration: none;
-      color: #6D9886;
+      color: #A27B5C;
     }
     a:hover {
       text-decoration: underline;
+    }
+    input, textarea {
+      background-color: #111;
+      color: #fff;
+      border: 1px solid #333;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #bbb;
     }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="assets/images/1753254833234.jpg" alt="GovDQ Logo" class="logo">
   <h1 class="display-5 fw-bold">GovDQ</h1>
   <p class="lead">Govern what you ingest. Trust what you measure.</p>
 </header>
@@ -51,10 +64,8 @@
   <div class="row justify-content-center">
     <div class="col-lg-8 text-center">
       <p class="fs-5">
-        GovDQ is a governance-first, API-driven data quality platform. We offer powerful ingestion pipelines,
-        automated DQ metrics, and expert services that help you own your data with clarity and trust.
+        GovDQ is a governance-first, API-driven data quality platform. We offer powerful ingestion pipelines, automated DQ metrics, and expert services that help you own your data with clarity and trust.
       </p>
-      <a href="#contact" class="btn btn-earth mt-4">Join the Waitlist</a>
     </div>
   </div>
 </div>
@@ -63,7 +74,7 @@
   <div class="row justify-content-center">
     <div class="col-lg-6">
       <h4 class="mb-3">Get in Touch</h4>
-      <form action="https://formsubmit.co/info@govdq.com" method="POST">
+      <form action="https://formspree.io/f/your-form-id" method="POST">
         <div class="mb-3">
           <input type="text" name="name" class="form-control" placeholder="Full Name" required>
         </div>
@@ -71,10 +82,8 @@
           <input type="email" name="email" class="form-control" placeholder="Email Address" required>
         </div>
         <div class="mb-3">
-          <textarea name="message" class="form-control" rows="4" placeholder="Your message..." required></textarea>
+          <textarea name="message" class="form-control" rows="4" placeholder="Your message..."></textarea>
         </div>
-        <input type="hidden" name="_subject" value="New contact from GovDQ">
-        <input type="hidden" name="_captcha" value="false">
         <button type="submit" class="btn btn-earth w-100">Submit</button>
       </form>
     </div>
