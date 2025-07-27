@@ -228,13 +228,19 @@
       </div>
     </section>
 
-    <form action="https://formspree.io/info@govdq.com" method="POST">
-      <h2>Get in Touch</h2>
-      <input type="text" name="name" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
-      <button type="submit">Submit</button>
-    </form>
+   <form action="https://formsubmit.co/info@govdq.com" method="POST">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_next" value="https://govdq.com/thank-you.html">
+  <input type="hidden" name="_subject" value="New Contact Message from GovDQ">
+  <input type="text" name="_honey" style="display:none">
+
+  <h2>Get in Touch</h2>
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+  <button type="submit">Submit</button>
+</form>
+
   </main>
 
   <footer>
